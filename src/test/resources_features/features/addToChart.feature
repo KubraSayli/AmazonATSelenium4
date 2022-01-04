@@ -1,7 +1,7 @@
 Feature: e2e test
 
   @E2E
-  Scenario Outline: Verify if user can successfully sign in with e mail
+  Scenario Outline: Verify if user can add a product to chart
     Given user navigates to home page
     Then verify if user is on the home page
     When user hover over on account&lists arrow
