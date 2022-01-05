@@ -104,13 +104,13 @@ public class StepDefinitions {
 
     }
 
-    @When("user clicks on add to chart button")
-    public void user_clicks_on_add_to_chart_button() {
+    @When("user clicks on add to cart button")
+    public void user_clicks_on_add_to_cart_button() {
         CommonMethods.click(signedInPage.addToChart);
     }
 
-    @Then("verify if product is added to chart")
-    public void verify_if_product_is_added_to_chart() {
+    @Then("verify if product is added to cart")
+    public void verify_if_product_is_added_to_cart() {
         String expectedText = "Added to Cart";
         Assert.assertEquals(expectedText, signedInPage.addedToChart.getText(), "the product could not be added");
     }

@@ -1,7 +1,7 @@
 Feature: e2e test
 
   @E2E
-  Scenario Outline: Verify if user can add a product to chart
+  Scenario Outline: Verify if user can add a product to cart
     Given user navigates to home page
     Then verify if user is on the home page
     When user hover over on account&lists arrow
@@ -15,8 +15,8 @@ Feature: e2e test
     And user clicks on the "Toys & Games" from dropdown
     And user searches for "Puzzles"
     And user selects any product
-    And user clicks on add to chart button
-    Then verify if product is added to chart
+    And user clicks on add to cart button
+    Then verify if product is added to cart
     Examples:
       | email                | password |
       | kacars2010@gmail.com | fake     |
